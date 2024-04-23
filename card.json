@@ -1,0 +1,249 @@
+{
+  "popularCard": [
+    {
+      "img": "./img/popular-card1.png",
+      "alt": "pop1",
+      "desc": "신한카드 Deep Dream Platinum+"
+    },
+    {
+      "img": "./img/popular-card2.png",
+      "alt": "pop2",
+      "desc": "신한카드 Deep Oil"
+    },
+    {
+      "img": "./img/popular-card3.png",
+      "alt": "pop3",
+      "desc": "신한카드 Mr.Life"
+    },
+    {
+      "img": "./img/popular-card4.png",
+      "alt": "pop4",
+      "desc": "GS Prime 신한카드"
+    },
+    {
+      "img": "./img/popular-card5.png",
+      "alt": "pop5",
+      "desc": "신한카드 Way 체크 (최고심)"
+    }
+  ],
+  "recommendCard": [
+    {
+      "img": "./img/recommend-card1.png",
+      "alt": "recommend1",
+      "desc": "신한카드 봄"
+    },
+    {
+      "img": "./img/recommend-card2.png",
+      "alt": "recommend2",
+      "desc": "신한카드 플리 (산리오캐릭터즈)"
+    },
+    {
+      "img": "./img/recommend-card3.png",
+      "alt": "recommend3",
+      "desc": "신한카드 핏 (최고심)"
+    },
+    {
+      "img": "./img/recommend-card4.png",
+      "alt": "recommend4",
+      "desc": "아시아나 신한카드 Air 1.5"
+    },
+    {
+      "img": "./img/recommend-card5.png",
+      "alt": "recommend5",
+      "desc": "신한카드 구독 좋아요"
+    }
+  ],
+  "premiumCard": [
+    {
+      "img": "./img/premium-card1.png",
+      "alt": "premium1",
+      "desc": "싱가포르항공 크리스플라이어 더 베스트 신한카드"
+    },
+    {
+      "img": "./img/premium-card2.png",
+      "alt": "premium2",
+      "desc": "메리어트 본보이 더 베스트 신한카드"
+    },
+    {
+      "img": "./img/premium-card3.png",
+      "alt": "premium3",
+      "desc": "메리어트 본보이 더 클래식 신한카드"
+    },
+    {
+      "img": "./img/premium-card4.png",
+      "alt": "premium4",
+      "desc": "신한카드 The Ace BLUE LABEL"
+    },
+    {
+      "img": "./img/premium-card5.png",
+      "alt": "premium5",
+      "desc": "신한카드 The Classic+"
+    }
+  ],
+  "recommendSlide": [
+    {
+      "desc": "결제계좌 변경하고 6천원 캐시백 받자!",
+      "img": "./img/main_slide_img1.png",
+      "alt": "slide1",
+      "dataI": "0"
+    },
+    {
+      "desc": "자동이체 신청하면 각 5천원 캐시백! 100만원 행운까지",
+      "img": "./img/main_slide_img2.png",
+      "alt": "slide2",
+      "dataI": "1" 
+    },
+    {
+      "desc": "미리 2024년 준비 대출조건 확인하면 1,000P",
+      "img": "./img/main_slide_img3.png",
+      "alt": "slide3",
+      "dataI": "2" 
+    },
+    {
+      "desc": "신한플레이와 첫 만남 5천 포인트 즉시 지급",
+      "img": "./img/main_slide_img4.png",
+      "alt": "slide4",
+      "dataI": "3" 
+    },
+    {
+      "desc": "신한 개인체크 카드로 혜택받고 지방세 납부하세요.",
+      "img": "./img/main_slide_img5.png",
+      "alt": "slide5",
+      "dataI": "4" 
+    },
+    {
+      "desc": "스파르타 x 나의 지원금 찾기 취업 무료 패키지",
+      "img": "./img/main_slide_img6.png",
+      "alt": "slide6",
+      "dataI": "5" 
+    },
+    {
+      "desc": "자산 찾고 포인트 GET 도장 꾹 이벤트!",
+      "img": "./img/main_slide_img7.png",
+      "alt": "slide7",
+      "dataI": "6" 
+    },
+    {
+      "desc": "고향사랑기부로 세액공제+ 답례품, 캐시백까지",
+      "img": "./img/main_slide_img8.png",
+      "alt": "slide8",
+      "dataI": "7" 
+    },
+    {
+      "desc": "우리집케어 서비스 런칭! 가입이벤트 진행중!",
+      "img": "./img/main_slide_img9.png",
+      "alt": "slide9",
+      "dataI": "8" 
+    }
+  ],
+  "finance": [
+    {
+      "img": "./img/finance_type1.png",
+      "alt": "finance1",
+      "h4": "단기카드대출",
+      "span": "(현금서비스)",
+      "a": "신청하기"
+    },
+    {
+      "img": "./img/finance_type2.png",
+      "alt": "finance2",
+      "h4": "장기카드대출",
+      "span": "(카드론)",
+      "a": "신청하기"
+    },
+    {
+      "img": "./img/finance_type3.png",
+      "alt": "finance3",
+      "h4": "일부결제금액 이월약정",
+      "span": "(리볼빙)",
+      "a": "신청하기"
+    },
+    {
+      "img": "./img/finance_type4.png",
+      "alt": "finance4",
+      "h4": "맞춤대출",
+      "span": "(즉시대출)",
+      "a": "신청하기"
+    }
+  ],
+  "category1": [
+    {
+      "img": "./img/category1.png",
+      "alt": "category1",
+      "desc": "월별명세서"
+    },
+    {
+      "img": "./img/category2.png",
+      "alt": "category2",
+      "desc": "이용내역"
+    },
+    {
+      "img": "./img/category3.png",
+      "alt": "category3",
+      "desc": "이용한도"
+    },
+    {
+      "img": "./img/category4.png",
+      "alt": "category4",
+      "desc": "즉시결제"
+    },
+    {
+      "img": "./img/category5.png",
+      "alt": "category5",
+      "desc": "포인트조회"
+    },
+    {
+      "img": "./img/category6.png",
+      "alt": "category6",
+      "desc": "내카드실적. 혜택"
+    },
+    {
+      "img": "./img/category7.png",
+      "alt": "category7",
+      "desc": "내카드관리"
+    },
+    {
+      "img": "./img/category8.png",
+      "alt": "category8",
+      "desc": "상담.민원"
+    }
+  ],
+
+  "category2": [
+    {
+      "img": "./img/category9.png",
+      "alt": "category9",
+      "desc": "내가받은혜택"
+    },
+    {
+      "img": "./img/category10.png",
+      "alt": "category10",
+      "desc": "마이샵쿠폰"
+    },
+    {
+      "img": "./img/category11.png",
+      "alt": "category11",
+      "desc": "이용한도상향"
+    },
+    {
+      "img": "./img/category12.png",
+      "alt": "category12",
+      "desc": "카드재발급"
+    },
+    {
+      "img": "./img/category13.png",
+      "alt": "category13",
+      "desc": "카드사용시등록"
+    },
+    {
+      "img": "./img/category14.png",
+      "alt": "category14",
+      "desc": "대출금액상환"
+    },
+    {
+      "img": "./img/category15.png",
+      "alt": "category15",
+      "desc": "진행중이벤트"
+    }
+  ]
+}

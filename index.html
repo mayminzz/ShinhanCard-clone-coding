@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>신한카드</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <div class="header_inner">
+          <div class="lnb">
+            <div class="left_lnb">
+              <ul>
+                <li><a href="">개인</a></li>
+                <li><a href="">법인</a></li>
+                <li><a href="">가맹점</a></li>
+              </ul>
+              <ul>
+                <li class="selectbox">
+                  <button class="dropdown">마이카</button>
+                  <div class="dropdown_menu">
+                    <a href="">마이카</a>
+                    <a href="">올댓쇼핑</a>
+                    <a href="">신한아름인</a>
+                    <a href="">BIGDATA</a>
+                    <a href="">신한은행</a>
+                    <button class="up_close"></button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="right_lnb">
+              <ul>
+                <li><a href="">로그인</a></li>
+                <li><a href="">회원가입</a></li>
+                <li><a href="">아이디찾기</a></li>
+                <li><a href="">상품공시실</a></li>
+                <li><a href="">금융소비자보호포털</a></li>
+              </ul>
+            </div>
+          </div>
+          <nav>
+            <a class="logo">
+              <img src="./img/shinhan-logo.png" alt="logo" />
+            </a>
+            <ul class="gnb">
+              <li><a href="">마이</a></li>
+              <li><a href="">혜택</a></li>
+              <li><a href="">금융</a></li>
+              <li><a href="">카드</a></li>
+              <li><a href="">서비스</a></li>
+              <li><a href="">디지털</a></li>
+              <li><a href="">Tops Club</a></li>
+              <li><a href="">고객센터</a></li>
+            </ul>
+            <div class="nav_ico">
+              <div class="search_ico">
+                <img src="./img/search_btn.png" alt="search" />
+              </div>
+              <div class="toggle_ico">
+                <img src="./img/toggle_btn.png" alt="toggle" />
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <div class="main_inner">
+          <section class="main_card_section">
+            <div class="search">
+              <input
+                type="text"
+                placeholder="메뉴, 카드, 혜택을 검색해보세요"
+              />
+              <button></button>
+            </div>
+            <div class="card_items">
+              <div class="card_menu">
+                <ul>
+                  <li data-index="1" class="active"><a href="">인기카드</a></li>
+                  <li data-index="2"><a href="">추천카드</a></li>
+                  <li data-index="3"><a href="">프리미엄카드</a></li>
+                </ul>
+              </div>
+              <div class="card_item_boxes"></div>
+            </div>
+            <div class="character_banner">
+              <p>
+                신한 슈퍼SOL 가입하면,<br /><span
+                  >스타벅스와 다양한 경품이!</span
+                >
+              </p>
+            </div>
+          </section>
+          <section class="recommend_section">
+            <div class="recommend_items"></div>
+            <div class="recommend_slide_btn">
+              <div class="prev_btn">
+                <img src="./img/arrow_left_icon.png" alt="leftBtn" />
+              </div>
+              <div class="next_btn">
+                <img src="./img/arrow_right_icon.png" alt="rightBtn" />
+              </div>
+            </div>
+            <div class="pager">
+              <div class="control_btn">
+                <img src="./img/Play_btn.png" alt="playBtn">
+              </div>
+              <span class="active" data-index="0"></span>
+              <span data-index="1"></span>
+              <span data-index="2"></span>
+              <span data-index="3"></span>
+              <span data-index="4"></span>
+              <span data-index="5"></span>
+              <span data-index="6"></span>
+              <span data-index="7"></span>
+              <span data-index="8"></span>
+            </div>
+          </section>
+          <section class="finance_section">
+            <h2>금융</h2>
+            <div class="my_benefit">
+              <span>똑똑한 금융생활 <a href="">나만의 금융혜택 보기</a></span>
+            </div>
+            <div class="finance_list_items"></div>
+          </section>
+          <section class="category_section">
+            <div class="category_wrapper">
+              <div class="category_inner">
+                <ul class="menu_box slide_box1"></ul>
+                <ul class="menu_box slide_box2"></ul>
+              </div>
+              <div class="C_control_button">
+                <div class="C_prev_btn"></div>
+                <div class="C_next_btn"></div>
+              </div>
+              <div class="C_pager">
+                <span class="active"></span>
+                <span></span>
+              </div>
+            </div>
+          </section>
+          <section class="notice_section">
+            <div class="notice_list">
+              <h1 class="active" data-index="tab0">공지</h1>
+              <ul id="tab0">
+                <li>
+                  <a href=""
+                    >미래에셋증권 전산시스템 작업으로 인한 서비스 일시 중단
+                    일정<span>NEW</span></a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    >GS25 POP서비스 가입 일시 중단 안내<span>NEW</span></a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    >2024년 신학장학재단 19기 장학생 신규 선발 안내<span
+                      >NEW</span
+                    ></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="caution_list">
+              <h1 data-index="tab1">금융소비자주의경보</h1>
+              <ul id="tab1">
+                <li>
+                  <a href=""
+                    >금융기관을 사칭하는 스미싱 등 금융사기 예방 안내
+                    <span>NEW</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">불법 채권추심 관련 금융소비자 경보 발령 </a>
+                </li>
+                <li>
+                  <a href="">
+                    어르신들의 소중한 노후자금을 노리는 불법 유산수신 업체를
+                    조심하게요!
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer>
+        <div class="footer_inner">
+          <div class="link_group1">
+            <ul>
+              <li>
+                <a href="">
+                  <em>고객센터</em>
+                  1544-7000
+                </a>
+                <a href="">
+                  (<em>해외</em>
+                  82-2-3420-7000)
+                </a>
+              </li>
+              <li>
+                <a href=""><em>카드분실신고</em>1544-7200</a>
+              </li>
+              <li>
+                <a href=""><em>카드신청</em>1661-8599</a>
+              </li>
+              <li>
+                <a href=""><em>금융신청</em>1588-0303</a>
+              </li>
+              <li>
+                <a href=""><em>할부금융</em>1544-7100</a>
+              </li>
+            </ul>
+          </div>
+          <div class="link_group2">
+            <ul>
+              <li><a href="">회사소개</a></li>
+              <li><a href="">지배구조</a></li>
+              <li><a href="">투자정보</a></li>
+              <li><a href="">이용약관</a></li>
+              <li><a class="bold" href="">고객관리 안내문</a></li>
+              <li><a class="bold" href="">개인정보처리방침</a></li>
+              <li><a href="">위치기반서비스 이용약관</a></li>
+              <li><a href="">유료상품 이용현황</a></li>
+              <li><a href="">금융소비자보호포털</a></li>
+              <li><a class="bold" href="">전자민원접수</a></li>
+              <li><a href="">상품공시실</a></li>
+              <li><a href="">내부자제보</a></li>
+            </ul>
+          </div>
+          <div class="share_family">
+            <ul class="sns">
+              <li>
+                <a href="">
+                  <img src="./img/sns1.png" alt="instagram" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./img/sns2.png" alt="facebook" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./img/sns3.png" alt="youtube" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./img/sns4.png" alt="naverpost" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./img/sns5.png" alt="kakaotalk" />
+                </a>
+              </li>
+            </ul>
+            <div class="family_group">
+              <div class="family_list family_member">
+                <button>전용회원</button>
+                <ul>
+                  <li><a href="">복지카드 회원</a></li>
+                  <li><a href="">웰프로카드 회원</a></li>
+                  <li><a href="">신한금융그룹 패밀리</a></li>
+                  <li><a href="">LG/LX/GS/LS/LIG 패밀리</a></li>
+                </ul>
+              </div>
+              <div class="family_list family_sh_group">
+                <button>신한금융그룹</button>
+                <ul>
+                  <li><a href="">신한금융지주회사</a></li>
+                  <li><a href="">신한은행</a></li>
+                  <li><a href="">신한투자증권</a></li>
+                  <li><a href="">신한라이프</a></li>
+                  <li><a href="">신한캐피탈</a></li>
+                  <li><a href="">신한자산운용</a></li>
+                  <li><a href="">제주은행</a></li>
+                  <li><a href="">신한저축은행</a></li>
+                  <li><a href="">신한자산신탁</a></li>
+                  <li><a href="">신한DS</a></li>
+                  <li><a href="">신한펀드파트너스</a></li>
+                  <li><a href="">신한신용정보</a></li>
+                  <li><a href="">신한리츠운용</a></li>
+                  <li><a href="">신한 AI</a></li>
+                  <li><a href="">신한벤처투자</a></li>
+                  <li><a href="">신한EZ손해보험</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer_expand_btn">
+            <img src="./img/dropdown_icon.png" alt="dropdown_icon" />
+          </div>
+          <div class="footer_expand">
+            <address>
+              <span class="text1"
+                >서울특별시 중구 을지로 100(을지로 2가, 파인에비뉴A동)</span
+              >
+              <span class="text2">대표이사 문동권</span>
+              <span class="text3">사업자등록번호202-81-48079</span>
+            </address>
+            <div class="copyright">
+              Copyright 2020 Shinhancard Co.,Ltd.All rightsreserved
+            </div>
+            <div class="awards-group">
+              <ul>
+                <li>
+                  <a href="">
+                    <img src="./img/footer_hide_img1.png" alt="hide1" />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="./img/footer_hide_img2.png" alt="hide2" />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="./img/footer_hide_img3.png" alt="hide3" />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="./img/footer_hide_img4.png" alt="hide4" />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="./img/footer_hide_img5.png" alt="hide5" />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="./img/footer_hide_img6.png" alt="hide6" />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="./img/footer_hide_img7.png" alt="hide7" />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="./img/footer_hide_img8.png" alt="hide8" />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="./img/footer_hide_img9.png" alt="hide9" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
