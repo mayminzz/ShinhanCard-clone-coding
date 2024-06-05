@@ -41,7 +41,6 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
 
 /* header */
@@ -624,17 +623,17 @@ div.control_btn img {
 .category_section {
   width: 100%;
   height: 290px;
-  overflow: hidden;
 }
 
 .category_wrapper {
+  width: 100%;
   height: 100%;
-  margin: 0 70px;
   padding: 60px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .category_inner {
@@ -645,7 +644,6 @@ div.control_btn img {
   justify-content: flex-start;
   align-items: flex-start;
   position: absolute;
-  border: 1px solid #f00 0.5;
   left: 0;
 }
 
