@@ -137,6 +137,19 @@ fetch(URL)
           slidesPerView: 3,
         },
       },
+
+    });
+    var sw = 0;
+    $(".btn_pause").click(function () {
+      if (sw == 0) {
+        $(".btn_pause").addClass("on");
+        swiper.autoplay.stop();
+        sw = 1;
+      } else {
+        $(".btn_pause").removeClass("on");
+        swiper.autoplay.start();
+        sw = 0;
+      }
     });
 
     const financeItems = document.querySelector(".finance_list_items");
