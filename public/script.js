@@ -96,7 +96,7 @@ fetch(URL)
     let recSlideOutput = "";
     json.recommendSlide.forEach((it) => {
       recSlideOutput += `
-      <li data-index="${it.dataI}" class="recommend_slide_item">
+      <li data-index="${it.dataI}" class="recommend_slide_item swiper-slide">
         <a href="#">
           <div class="text_sec">
             <h2>${it.desc}</h2>
@@ -105,96 +105,38 @@ fetch(URL)
         </a>
       </li>
       `;
-    });
-    slides.innerHTML = recSlideOutput;
-
-    //슬라이드
-    const slide = slides.querySelectorAll(".recommend_items > li");
-    const slideCount = slide.length;
-    const slideWidth = 430;
-    let currentIndex = 0;
-    const prevBtn = document.querySelector(".recommend_slide_btn > .prev_btn");
-    const nextBtn = document.querySelector(".recommend_slide_btn > .next_btn");
-    const controlBtn = document.querySelector(".control_btn");
-
-    const R_pager = document.querySelectorAll(
-      ".recommend_section .pager > span"
-    );
-    console.log(R_pager);
-
-    const setInitialPos = () => {
-      let initialTranslateValue = -slideWidth * slideCount;
-      slides.style.transform = `translateX(${initialTranslateValue}px)`;
-    };
-
-    //슬라이드
-    const moveSlide = (i) => {
-      slides.style.left = `${-i * slideWidth}px`;
-      if (window.innerWidth < 1100) {
-        slides.style.left = `${-i * 100}%`;
-      }
-      currentIndex = i;
-
-      if (currentIndex === slideCount || currentIndex === -slideCount) {
-        setTimeout(() => {
-          slides.classList.remove("animated");
-          slides.style.left = "0px";
-          currentIndex = 0;
-        }, 500);
-        setTimeout(() => {
-          slides.classList.add("animated");
-        }, 600);
-      }
-
-      for (let i = 0; i < R_pager.length; i++) {
-        R_pager[i].classList.remove("active");
-      }
-      R_pager[i].classList.add("active");
-    };
-
-    for (let i = 0; i < R_pager.length; i++) {
-      R_pager[i].addEventListener("click", (e) => {
-        let pagerNum = e.target.getAttribute("data-index");
-        moveSlide(pagerNum);
-      });
-    }
-
-    let timer = undefined;
-    //자동슬라이드
-    const autoSlide = () => {
-      if (timer === undefined) {
-        timer = setInterval(() => {
-          moveSlide(currentIndex + 1);
-        }, 3000);
-      }
-    };
-    autoSlide();
-    //슬라이드 멈추기
-    const stopSlide = () => {
-      clearInterval(timer);
-      timer = undefined;
-    };
-
-    let isPlaying = true;
-
-    const controlImg = controlBtn.querySelector("img");
-    controlBtn.addEventListener("click", () => {
-      if (isPlaying) {
-        controlImg.setAttribute("src", "./img/stop_btn.png");
-        stopSlide();
-      } else {
-        controlImg.setAttribute("src", "./img/play_btn.png");
-        autoSlide();
-      }
-      isPlaying = !isPlaying;
+      slides.innerHTML = recSlideOutput;
     });
 
-    //버튼 클릭 이벤트
-    prevBtn.addEventListener("click", () => {
-      moveSlide(currentIndex - 1);
-    });
-    nextBtn.addEventListener("click", () => {
-      moveSlide(currentIndex + 1);
+    const swiper = new Swiper(".swiper", {
+      // Optional parameters
+      direction: "horizontal",
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: ".swiper-pagination",
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 3000,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 1,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
     });
 
     const financeItems = document.querySelector(".finance_list_items");
@@ -253,8 +195,11 @@ const cNextBtn = document.querySelector(".C_next_btn");
 const pager = document.querySelectorAll(".C_pager > span");
 
 const C_goToSlide = (i) => {
-  categoryInner.style.left = `${i * -100}%`;
-  categoryInner.classList.add("animated");
+  categoryInner.style.transform = `translateX(${i * -100}%)`;
+  if (window.innerWidth < 1024) {
+    categoryInner.style.transform = `translateX(${i * -50}%)`;
+  }
+  // categoryInner.classList.add("animated");
   C_currentIndex = i;
 
   for (let i = 0; i < pager.length; i++) {
@@ -297,10 +242,13 @@ familyBtns.forEach((btn) => {
 });
 
 // footer_expand
-const footerExpandBtn = document.querySelector(".footer_expand_btn > img");
+const footerExpandBtn = document.querySelector(".footer_expand_btn img");
+
+console.log(footerExpandBtn);
 const footerHideSec = document.querySelector(".footer_expand");
 
 footerExpandBtn.addEventListener("click", () => {
+  console.log("click");
   footerHideSec.classList.toggle("show_f_hide_sec");
-  footerExpandBtn.classList.toggle("rotate");
+  footerExpandBtn.classList.toggle("toggleOn");
 });

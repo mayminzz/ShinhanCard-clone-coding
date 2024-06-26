@@ -6,7 +6,11 @@
     <title>신한카드</title>
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./style.css" />
-    <script defer src="./script.js"></script>
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div id="wrap">
@@ -96,30 +100,11 @@
               </p>
             </div>
           </section>
-          <section class="recommend_section">
-            <div class="recommend_items"></div>
-            <div class="recommend_slide_btn">
-              <div class="prev_btn">
-                <img src="./img/arrow_left_icon.png" alt="leftBtn" />
-              </div>
-              <div class="next_btn">
-                <img src="./img/arrow_right_icon.png" alt="rightBtn" />
-              </div>
-            </div>
-            <div class="pager">
-              <div class="control_btn">
-                <img src="./img/Play_btn.png" alt="playBtn">
-              </div>
-              <span class="active" data-index="0"></span>
-              <span data-index="1"></span>
-              <span data-index="2"></span>
-              <span data-index="3"></span>
-              <span data-index="4"></span>
-              <span data-index="5"></span>
-              <span data-index="6"></span>
-              <span data-index="7"></span>
-              <span data-index="8"></span>
-            </div>
+          <section class="recommend_section swiper">
+            <div class="recommend_items swiper-wrapper"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </section>
           <section class="finance_section">
             <h2>금융</h2>
@@ -138,10 +123,10 @@
                 <div class="C_prev_btn"></div>
                 <div class="C_next_btn"></div>
               </div>
-              <div class="C_pager">
-                <span class="active"></span>
-                <span></span>
-              </div>
+            </div>
+            <div class="C_pager">
+              <span class="active"></span>
+              <span></span>
             </div>
           </section>
           <section class="notice_section">
@@ -363,5 +348,13 @@
         </div>
       </footer>
     </div>
+    <script defer src="./script.js"></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
